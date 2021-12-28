@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Booking</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="js/script.js" />
+    <!-- tách css -->
+    <style>
+      .info-box {
+        border: 1px solid;
+        background: #fefbc4;
+      }
+
+      .count-customer {
+        position: relative;
+        width: 60%;
+        margin: auto;
+        border: 1px solid red;
+        padding: 20px;
+        z-index: 1;
+      }
+
+      .count-customer input {
+        width: 35%;
+      }
+
+      .count-customer-header {
+        position: absolute;
+        top: -15px;
+        background: #fefbc4;
+      }
+
+      .count-customer-header p {
+        margin-bottom: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="d-flex w-100">
+        <div class="info-box" style="width: 30%"><p>Họ và tên</p></div>
+        <div class="info-box" style="width: 70%">
+          <input type="text" id="name" />
+        </div>
+      </div>
+      <div class="d-flex w-100">
+        <div class="info-box" style="width: 30%"><p>Địa chỉ</p></div>
+        <div class="info-box" style="width: 70%">
+          <input type="text" id="address" />
+        </div>
+      </div>
+      <div class="d-flex w-100">
+        <div class="info-box" style="width: 30%"><p>Điện thoại</p></div>
+        <div class="info-box" style="width: 70%">
+          <input type="text" id="number-phone" />
+        </div>
+      </div>
+      <div class="d-flex w-100">
+        <div class="info-box" style="width: 30%"><p>Khách Việt Nam</p></div>
+        <div class="info-box" style="width: 70%">
+          <input type="checkbox" id="is-vietnam" />
+        </div>
+      </div>
+      <div class="d-flex w-100">
+        <div class="info-box" style="width: 30%"><p>Chọn tour</p></div>
+        <div class="info-box" style="width: 70%">
+          <select name="tour" id="tour">
+            <option value="BMT-GL">Buôn Mê Thuột - Gia lai</option>
+          </select>
+        </div>
+      </div>
+      <div class="d-flex w-100">
+        <div class="info-box" style="width: 30%"><p>Phương tiện</p></div>
+        <div class="info-box" style="width: 70%">
+          <input type="text" id="name" />
+        </div>
+      </div>
+      <div class="d-flex w-100">
+        <div class="info-box" style="width: 100%; padding: 15px">
+          <div class="count-customer">
+            <div class="count-customer-header"><p>số lượng đoàn khách</p></div>
+            <div class="d-flex w-100">
+              <div style="width: 50%">
+                <span>Người lớn</span>
+                <input type="text" />
+              </div>
+              <div style="width: 50%">
+                <span>Trẻ em</span>
+                <input type="text" id="child" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex w-100">
+        <div class="info-box" style="width: 30%"><p>Ghi chú thêm</p></div>
+        <div class="info-box" style="width: 70%">
+          <textarea name="description" id="description" rows="1"></textarea>
+        </div>
+      </div>
+      <div class="d-flex w-100">
+        <div class="info-box w-100 text-center">
+          <button>Đồng ý</button>
+        </div>
+      </div>
+      <div class="d-flex w-100">
+        <div class="result info-box w-100"></div>
+      </div>
+    </div>
+  </body>
+</html>

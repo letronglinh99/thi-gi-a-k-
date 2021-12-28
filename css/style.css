@@ -1,0 +1,13 @@
+ul {
+  list-style-type: none;
+}
+.menu {
+  height: 60px;
+  background: #dc1588;
+}
+.tel {
+  color: #ffff63;
+}
+.main-menu li a {
+  color: #879aac;
+}
